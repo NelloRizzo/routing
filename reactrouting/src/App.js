@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import { Home } from './Home/Home.js';
 import { About } from './About/About.js';
+import { AlbumDetail } from './AlbumDetail/AlbumDetail.js';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} ></Route>
         <Route path='/about' element={<About />} ></Route>
+        <Route path='/detail/:id' element={<AlbumDetail />} ></Route>
       </Routes>
     </BrowserRouter>
   );
