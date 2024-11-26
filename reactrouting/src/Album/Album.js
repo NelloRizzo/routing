@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export function Album({ data }) {
     return (
-        <div><Link to={`/detail/${data.id}`}>{data.title}</Link> </div>
+        <div><NavLink to={`/detail/${data.id}`} activeClassName="active">{data.title}</NavLink> </div>
     )
 }

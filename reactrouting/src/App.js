@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Home } from './Home/Home.js';
 import { About } from './About/About.js';
 import { AlbumDetail } from './AlbumDetail/AlbumDetail.js';
@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <nav>
         <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/about'>About</Link></li>
+          <li><NavLink to='/' activeClassName='active'>Home</NavLink></li>
+          <li><NavLink to='/about'>About</NavLink></li>
         </ul>
       </nav>
       <Routes>
