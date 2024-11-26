@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <nav>
         <ul>
-          <li><NavLink to='/' activeClassName='active'>Home</NavLink></li>
+          <li><NavLink to='/' activeclassname='active'>Home</NavLink></li>
           <li><NavLink to='/about'>About</NavLink></li>
         </ul>
       </nav>
